@@ -207,6 +207,8 @@ const artists = [
 
 (1) Name of the first artist in the array
 (2) Bio of the third artist in the array */
+let firstArtist = artists['0'];
+console.log(firstArtist.name);
 
 
 
