@@ -1,3 +1,12 @@
+.flex {
+  display: flex;
+}
+.absolPos {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 45px;
+}
 html,
 body,
 div,
@@ -89,7 +98,7 @@ video {
 .navbar {
   display: flex;
   justify-content: center;
-  margin: 30px 30px;
+  margin: 25px 25px;
 }
 .navbar .topNav {
   margin: 30px 30px;
@@ -97,9 +106,11 @@ video {
 .navbar a {
   text-decoration: none;
   color: black;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   opacity: 80%;
-  padding: 5px;
+  padding: 10px;
+  font-weight: bold;
+  margin-left: 10px;
 }
 .navbar .Home {
   border-right: 1.5px solid grey;
@@ -119,60 +130,73 @@ video {
     border-right: none;
   }
 }
-.title-container {
+.textBox {
   position: relative;
-  width: 100%;
+  width: 80%;
   display: flex;
+  justify-content: center;
 }
-.title-container .large {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  opacity: 80%;
+.textBox .large {
+  margin-left: 35%;
+  margin-right: 10%;
+  width: 60%;
+  opacity: 70%;
+  display: inline-block;
+  margin-bottom: 10px;
 }
-.title-container .text {
-  position: absolute;
-  top: 200px;
-  left: 0;
-  width: 100%;
-  text-align: center;
+.textBox p {
   color: white;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-weight: bold;
-  margin: 10px;
-}
-.title-container .bottomtxt {
-  position: absolute;
-  top: 350px;
-  right: 820px;
-  width: 200px;
   text-align: center;
+  position: absolute;
+  display: inline-block;
+  margin-left: 12%;
+  margin-top: 8%;
+}
+.textBox .bottomtxt {
+  position: absolute;
   color: black;
   font-size: 1.6rem;
-  margin: 20px;
+  top: 60%;
+  font-size: 20px;
+  margin: 5px 12%;
 }
 .artists-container {
   display: flex;
-  justify-content: center;
-  width: 80%;
-  margin-left: 200px;
+  justify-content: space-evenly;
+  flex-direction: row;
 }
-.artists-container .artist {
-  width: 60%;
+.artists-container .artPics {
+  width: 150%;
+  height: 50%;
+  border-radius: 10px;
 }
-.artists-container .artist img {
-  width: 80%;
-  border-radius: 5px;
+@media (max-width: 500px) {
+  .artists-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
-.artists-container .artist a {
-  font-size: 1.6rem;
+.artist {
   display: flex;
   justify-content: center;
-  text-decoration: none;
+  flex-wrap: wrap;
+  width: 325px;
 }
-.artists-container .bio {
-  margin: 10px;
+.bio {
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+}
+p {
   text-align: center;
-  font-size: 1.2rem;
+  padding: 10px;
+}
+img:hover {
+  opacity: 80%;
+}
+.bio:hover {
+  color: turquoise;
 }
