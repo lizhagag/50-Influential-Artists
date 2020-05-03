@@ -2,11 +2,9 @@
     display:flex;
     justify-content: center;
     margin:25px 25px;
-
     .topNav {
         margin:30px 30px;
-    }
-    a {
+      a {
         text-decoration: none;
         color:black;
         font-size:1.6rem;
@@ -14,23 +12,36 @@
         padding: 10px;
         font-weight: bold;
         margin-left: 10px;
-        
-    }
+      }
     .Home {
-        .navBar()
+        .navBar();
     }
     .About {
         .navBar()
-    }
-}
+               }
+            }
+        }
+    
 
-@media (max-width:500px) {
-    .navbar {
+
+
+@media @mobile {
+    .topNav {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 20px 0;
-    margin-bottom: 20px;
-    .Home,.About{
-        border-right:none;
-    }
-}}
+    a {
+    border:.5px inset @borderColor;
+    background-color: lightgrey;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 5px 5px;
+  }
+ }
+}
+
+@media @mobile {
+  body {
+    background-color: oldlace;
+  }
+}
