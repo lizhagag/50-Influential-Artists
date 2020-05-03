@@ -1,8 +1,10 @@
-
+.body {
+    margin: 100px;
+}
 .textBox{
     position: relative; 
     width: 80%;
-    display: flex;
+    .flex();
     justify-content: center;
     .large {
         margin-left: 35%;
@@ -11,6 +13,7 @@
         opacity: 80%;
         display: inline-block;
         margin-bottom: 10px;
+        border-radius: 1px;
     }
     p {
         color: white;
@@ -24,14 +27,7 @@
     }
 
     .bottomtxt{
-        position: absolute; 
-        color:black;
-        font-size:1rem;
-        padding: 15px;
-        border-radius: 5px;
-        top: 60%;
-        margin: 5px 12%;
-        box-shadow: 3px 3px 1px @borderColor;
+        .btn(black);
     }
 }
 @media @mobile {

@@ -1,18 +1,24 @@
 
-
-.displayFlex(@justify){
-    display: flex;
-    justify-content: @justify;
-}
-
 .navBar(){
     border-right: 1.5px solid grey;
+    padding-left:1px;
 }
 
 .mobileNav(){
     border-right: 0px;
 }
 
-.flex{
+.flex(){
     display: flex;
         }
+
+.btn(@color) {
+    position: absolute; 
+    color:@color;
+    font-size:1rem;
+    padding: 15px;
+    border-radius: 5px;
+    top: 60%;
+    margin: 5px 12%;
+    box-shadow: 3px 3px 1px @borderColor;
+}

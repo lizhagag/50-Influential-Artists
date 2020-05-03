@@ -1,6 +1,3 @@
-.flex {
-  display: flex;
-}
 html,
 body,
 div,
@@ -92,44 +89,47 @@ video {
 .navbar {
   display: flex;
   justify-content: center;
-  margin: 25px 25px;
-}
-.navbar .topNav {
-  margin: 30px 30px;
+  align-content: space-around;
+  margin: 90px 30px;
 }
 .navbar .topNav a {
   text-decoration: none;
   color: black;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   opacity: 80%;
   padding: 10px;
-  font-weight: bold;
   margin-left: 10px;
 }
 .navbar .topNav .Home {
   border-right: 1.5px solid grey;
+  padding-left: 1px;
 }
 .navbar .topNav .About {
   border-right: 1.5px solid grey;
+  padding-left: 1px;
 }
 @media (max-width: 500px) {
   .topNav {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
   .topNav a {
     border: 0.5px inset #88888;
     background-color: lightgrey;
     border-radius: 10px;
-    margin: 10px;
+    margin: 5px;
     box-shadow: 5px 5px;
+    padding: 30%;
+    text-align: center;
   }
 }
 @media (max-width: 500px) {
   body {
     background-color: oldlace;
   }
+}
+.body {
+  margin: 100px;
 }
 .textBox {
   position: relative;
@@ -144,6 +144,7 @@ video {
   opacity: 80%;
   display: inline-block;
   margin-bottom: 10px;
+  border-radius: 1px;
 }
 .textBox p {
   color: white;
