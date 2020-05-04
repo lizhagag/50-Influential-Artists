@@ -240,24 +240,35 @@ console.log(artists[8])
  * For example, if removeArtist is invoked with the data and the number 0,
  * it will remove Amedeo Modigliani from our dataset.
 */
-function removeArtist(index) {
-  artists.slice(artists[index]);
-}
+function removeArtist(array,index) {
+  array.splice(index, index + 1);
+  return array;
+  }
+
+  console.log(removeArtist(artists, 0));
+  
 
 
   /**
 
 
 /* Task 5: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
-function lotsOfArt(artArr){
-let countPaintings = [];
-for (let i = 0; i < artArr.length; i++) {
-if (artArr[i].paintings > 100) {
-  countPaintings.push(artArr[i].name);}
-}	  }
+function lotsOfArt(array){
 
+  let newArray = [];
+  for(let i=0; i < array.length; i++){
+    let text= array[i].paintings;
+    var integer = parseInt(text, 10);
+    if (integer > 100 ){
+      newArray.push(array[i].name);
+    }
+    
+    
+  }
+  return newArray
+}
 
-
+console.log(lotsOfArt(artists));
 
 
 
@@ -270,31 +281,23 @@ years: Your Birth Year - current day,
 genre: Web Design, 
 nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
+function addArtist(array, artist){
+  
+  array.push(artist);
 
-// function addArtist(myInfo){
-// let addInfo = artists;
-// addInfo.push(myInfo)
-// pop( {
+}
 
-// )
+let artist = {
+  id: 21,
+  name: 'Elizabeth', 
+  years: '1994 - current day',
+  genre: 'Web Development', 
+  nationality: 'American',
+  bio: 'Lorem ipsum dolorr'} 
 
-//   }
- 
-//   console.log(myInfo);
+addArtist(artists,artist);
 
-
-function addArtist(){
-  let addInfo = [[artists]];
-  let newCopy = addInfo.slice(0);
-  newCopy.push( id= 21,
-    name= 'Elizabeth',
-    years= 'July 1994-present',
-    genre = 'Web Design')
-  }	  
-
-
-
-
+console.log(artists);
 
 
 
